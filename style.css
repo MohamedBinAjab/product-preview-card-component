@@ -43,7 +43,7 @@ h1{font-family: 'Fraunces', serif;
 .price-discount{margin-right: 20px;font-size: 30px;color: var(--dark-cyan);font-family: 'Fraunces', serif;}
 .Cart{padding: 15px;border: none;background-color: var(--dark-cyan);color: white;border-radius: 8px;text-align: center;width: 100%;font-weight: 700;cursor: pointer;}
 .Cart::before {
-    content: "__";
+    content: "";
     background: url("icon-cart.svg");
     width: 15px;
     height: 16px;
