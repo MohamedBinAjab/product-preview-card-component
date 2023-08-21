@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Ubuntu&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+:root{
+    --cream-color:hsl(30, 38%, 92%);
+    --dark-cyan:hsl(158, 36%, 37%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --Dark-gray: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%)
+}
+body{
+  
+font-family: 'Montserrat', sans-serif;
+background-color: var(--cream-color);
+min-height: 100vh;
+display: grid;
+place-content: center;
+}
+#proudct{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 600px;
+    margin: 1rem;
+}
+img,picture{display: block;max-width: 100%;}
+img{border-top-left-radius: 10px;border-bottom-left-radius: 10px;}
+#proudct .proudect-content{
+    background-color: white;
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.category{color: var(--Dark-gray);
+    text-transform: uppercase;font-size: 12px;
+        letter-spacing: 4px;}
+p{ color: var(--Dark-gray);line-height: 1.6;font-size: 14px;}
+h1{font-family: 'Fraunces', serif;
+    color: var(--dark-blue);
+    font-size: 32px;
+    margin: 20px 0;
+    line-height: 1;}
+#price{display: flex;align-items: center ;margin: 20px 0;}
+.price-discount{margin-right: 20px;font-size: 30px;
+    color: var(--dark-cyan);font-family: 'Fraunces', serif;
+            }
+.Cart{padding: 15px;border: none;background-color: var(--dark-cyan);color: white;
+        border-radius: 8px;text-align: center;width: 100%;font-weight: 700;cursor: pointer;}
+.Cart::before {
+    content: "__";
+    background: url("./images/icon-cart.svg");
+    width: 15px;
+    height: 16px;
+    margin-right: 10px;
+   }
+   @media (max-width: 700px) {
+    #proudct {
+                grid-template-columns: 1fr;
+            }
+img{border-top-left-radius: 10px;border-top-right-radius: 10px;border-bottom-left-radius: 0;}
+#proudct .proudect-content {
+       border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+   }
+
+
+
+
+
+
+
+
+  .attribution{
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%); 
+  }
+    
+  
